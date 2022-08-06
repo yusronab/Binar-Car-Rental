@@ -12,4 +12,4 @@
 - [x] FAQ
 - [x] Footer
 
-<p>Website : <a href="https://binar-car-rental.yusronab.repl.co/" target="_blank">Binar Car Rental</a></p>
+<p>Demo Website : <a href="https://binar-car-rental.yusronab.repl.co/" target="_blank">Binar Car Rental</a></p>
