@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCR - Binar Car Rental</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,44 +17,51 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">BCR</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="btn btn-success d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#our-services">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#why-us">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-success" href="#">Register</a>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why-us">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div class="main-section">
-        <div class="container h-100 d-flex">
+    <div class="main-section pt-md-5">
+        <div class="bg-car"></div>
+        <div class="container h-100 d-flex pt-md-5">
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-6 tagline mt-sm-5 mt-md-0">
+                <div class="col-md-6 tagline py-5">
                     <h2>sewa &amp; rental mobil terbaik dikawasan lokasimu</h2>
                     <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga
                         terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
                     </p>
                     <a href="#" class="btn btn-success">Mulai Sewa Mobil</a>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center align-items-center img-car">
-                    <span></span>
+                <div class="col-md-6 img-car py-5">
                     <img src="./img/Mercedes Car EQC 300kW Edition - 900x598 1.png" alt="" class="w-100">
                 </div>
             </div>
@@ -76,11 +80,20 @@
                         lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,
                         wedding, meeting, dll.
                     </p>
-                    <p><i class="bi bi-check-lg me-3"></i>Sewa Mobil Dengan Supir di Bali 12 Jam</p>
-                    <p><i class="bi bi-check-lg me-3"></i>Sewa Mobil Lepas Kunci di Bali 24 Jam</p>
-                    <p><i class="bi bi-check-lg me-3"></i>Sewa Mobil Jangka Panjang Bulanan</p>
-                    <p><i class="bi bi-check-lg me-3"></i>Gratis Antar - Jemput Mobil di Bandara</p>
-                    <p><i class="bi bi-check-lg me-3"></i>Layanan Airport Transfer / Drop In Out</p>
+                    <div class="custom-list">
+                        <p class="custom-text pe-2"><i class="bi bi-check-lg me-3"></i>Sewa Mobil Dengan Supir di Bali
+                            12 Jam
+                        </p>
+                        <p class="custom-text-2 pe-2"><i class="bi bi-check-lg me-3"></i>Sewa Mobil Lepas Kunci di Bali
+                            24
+                            Jam</p>
+                        <p class="custom-text pe-2"><i class="bi bi-check-lg me-3"></i>Sewa Mobil Jangka Panjang Bulanan
+                        </p>
+                        <p class="custom-text pe-2"><i class="bi bi-check-lg me-3"></i>Gratis Antar - Jemput Mobil di
+                            Bandara</p>
+                        <p class="custom-text pe-2"><i class="bi bi-check-lg me-3"></i>Layanan Airport Transfer / Drop
+                            In Out</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,7 +170,7 @@
                                             <i class="bi bi-star-fill me-1"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p class="pe-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                                        <p class="pe-md-5">Lorem ipsum dolor sit arly consectetur adipisicing elit. Quo
                                             itaque dicta nostrum
                                             laboriosam quisquam! Iure, officiis! Praesentium ullam laudantium, tempore
                                             reiciendis delectus aut? Quaerat, dolor.
@@ -185,7 +198,7 @@
                                             <i class="bi bi-star-fill me-1"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p class="pe-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                                        <p class="pe-md-5">Lorem ipsum dolor sit arly consectetur adipisicing elit. Quo
                                             itaque dicta nostrum
                                             laboriosam quisquam! Iure, officiis! Praesentium ullam laudantium, tempore
                                             reiciendis delectus aut? Quaerat, dolor.
@@ -213,7 +226,7 @@
                                             <i class="bi bi-star-fill me-1"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p class="pe-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                                        <p class="pe-md-5">Lorem ipsum dolor sit arly consectetur adipisicing elit. Quo
                                             itaque dicta nostrum
                                             laboriosam quisquam! Iure, officiis! Praesentium ullam laudantium, tempore
                                             reiciendis delectus aut? Quaerat, dolor.
@@ -269,7 +282,7 @@
                             <div id="collapseButuh" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                                    <p>Lorem ipsum dolor sit arly consectetur adipisicing elit. Voluptatibus
                                         eligendi deleniti in tenetur distinctio repellendus ut quo dolorem dicta
                                         veniam!</p>
                                 </div>
@@ -342,7 +355,7 @@
     </div>
 
     <div class="footer">
-        <div class="container">
+        <div class="container pb-5">
             <div class="row">
                 <div class="col-md-4">
                     <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
@@ -351,7 +364,7 @@
                 </div>
                 <div class="col-md-2 d-flex flex-column">
                     <a href="#our-services" class="text-decoration-none mb-3">Our services</a>
-                    <a href="#why-us" class="text-decoration-none mb-3">WHy Us</a>
+                    <a href="#why-us" class="text-decoration-none mb-3">Why Us</a>
                     <a href="#testimonial" class="text-decoration-none mb-3">Testimonial</a>
                     <a href="#faq" class="text-decoration-none mb-3">FAQ</a>
                 </div>
